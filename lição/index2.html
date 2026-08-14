@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DevConnect</h1>
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@euamosenai.com.br" required><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" placeholder="Sua idade" required><br><br>
+
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required><br><br>
+
+        <label for="genero">Gênero:</label>
+        <select name="genero" id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+            <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+        </select>
+    </fieldset>
+
+    <!-- Segundo Bloco -->
+    <fieldset>
+        <legend>Informações Profissionais
+        </legend>
+
+        <br>
+    <label for="linguagem">Linguagem Favorita:</label>
+    <input type="text" id="linguagem" name="linguagem"><br><br>
+
+    <label for="nivel_de_conhecimento">Nível de Conhecimento:</label>
+    <select id="nivel_de_conhecimento" name="nivel_de_conhecimento">
+        <option value="iniciante">Iniciante</option>
+        <option value="intermediario">Intermediário</option>
+        <option value="avancado">Avançado</option>
+    </select><br><br>
+
+
+        <label for="bio">Fale sobre sua esperiência:</label><br>
+        <textarea id="bio" name="bio" rows="3" placeholder="Conte um pouco sobre a sua experiência com tecnologia..."></textarea>
+    </fieldset>
+
+
+
+        <fieldset>
+        <legend>Preferências de Contato</legend>
+
+        <label for="hora-cadastro">Melhor horário para contato:</label>
+        <input type="time" id="hora-cadastro" name="hora-cadastro"><br><br>
+
+         <label for="data">Data disponível para iniciar um projeto:</label>
+        <input type="date" id="nascimento" name="nascimento" required><br><br>
+         </fieldset>
+
+
+
+
+             <fieldset>
+        <legend>Informações Adicionais</legend>
+
+        <details>
+            <summary>O que é a DevConnect?</summary>
+            <p>A DevConnect é uma plataforma feita para conectar desenvolvedores a projetos e oportunidades incríveis no mercado de tecnologia.</p>
+        </details>
+
+        <br>
+        <mark>Atenção: confira seus dados antes de realizar o cadastro.</mark>
+
+        <p>Para dúvidas, entre em contato:</p>
+        <address>
+            <em>DevConnect</em><br>
+            E-mail: <a href="mailto:contato@devconnect.com.br">contato@devconnect.com.br</a><br>
+            Telefone: (11) 99999-9999
+        </address>
+
+        <p>Data de abertura dos cadastros: 14 de agosto de 2026</p>
+
+        <br>
+        <input type="submit" value="Cadastrar Desenvolvedor">
+    </fieldset>
+</form>
+
+</body>
+</html>
