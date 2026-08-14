@@ -1,320 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    </head>
+</head>
 <body>
-    <ol>
-    <table border="1">
-        <thead>
-            <tr> 
-               
-            <th>Posição</th>
-               <th>Logo</th>
-                <th>Clube</th>
-                <th>Pts</th>
-                <th>PJ</th>
-                <th>VIT</th>
-                <th>E</th>
-                <th>DER</th>
-                <th>GM</th>
-                <th>GC</th>
-                <th>SG</th>
-            
-            </tr>
-        </thead>
-        <tbody>
-    <tr>
-       <td><ol start="1"><li></li></ol></td>
-            <td>
-        <img src="https://static.wikia.nocookie.net/cftu/images/c/cd/Palmeiras.png/revision/latest/thumbnail/width/360/height/450?cb=20170102174540&path-prefix=pt-br" alt="Bandeira do Palmeiras" width="20"></td>
-       <td>Palmeiras</td>
-        <td>48</td>
-        <td>22</td>
-        <td>14</td>
-        <td>6</td>
-        <td>2</td>
-        <td>38</td>
-        <td>16</td>
-        <td>22</td>
-    </tr>
+    <h1>DevConnect</h1>
+      <fieldset>
+        <legend>Informações Pessoais</legend>
 
-<tr>
-   <td><ol start="2"><li></li></ol></td>
-    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Clube_de_Regatas_do_Flamengo_logo.svg/250px-Clube_de_Regatas_do_Flamengo_logo.svg.png?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Bandeira do Flamengo" width="20"></td>
-        <td>Flamengo</td>
-        <td>42</td>
-        <td>21</td>
-        <td>12</td>
-        <td>6</td>
-        <td>3</td>
-        <td>39</td>
-        <td>18</td>
-        <td>21</td>
-    </tr>
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
 
-    <tr>
-        <td><ol start="3"><li></li></ol></td>
-        <td><img src="https://www.ogol.com.br//img/logos/equipas/2230_imgbank_1683626334.png" alt="Bandeira do Athletico-PR" width="20"></td>
-        <td>Athletico-PR</td>
-        <td>40</td>
-        <td>22</td>
-        <td>12</td>
-        <td>4</td>
-        <td>6</td>
-        <td>30</td>
-        <td>19</td>
-        <td>11</td>
-    </tr>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@euamosenai.com.br" required><br><br>
 
-     <tr>
-        <td><ol start="4"><li></li></ol></td>
-        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Fluminense_Football_Club.svg/250px-Fluminense_Football_Club.svg.png?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Bandeira do Fluminense" width="20"></td>
-        <td>Fluminense</td>
-        <td>35</td>
-        <td>22</td>
-        <td>9</td>
-        <td>8</td>
-        <td>5</td>
-        <td>31</td>
-        <td>26</td>
-        <td>5</td>
-    </tr>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><br><br>
 
-     <tr>
-       <td><ol start="5"><li></li></ol></td>
-        <td><img src="https://images.tcdn.com.br/files/311840/themes/5359/img/paginas-personalizadas/times/cruzeiro/Escudo-Topo.png?227ca330c9b867d8d6f3e8bf567ff000" alt="Bandeira do Cruzeiro" width="20"></td>
-        <td>Cruzeiro</td>
-        <td>33</td>
-        <td>22</td>
-        <td>9</td>
-        <td>6</td>
-        <td>7</td>
-        <td>30</td>
-        <td>31</td>
-        <td>-1</td>
-    </tr>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" placeholder="Sua idade" required><br><br>
 
-     <tr>
-        <td><ol start="6"><li></li></ol></td>
-        <td><img src="https://i.pinimg.com/736x/c7/68/2a/c7682ac7000313de08b82dca2033ee42.jpg" alt="Bandeira da Bahia" width="20"></td>
-        <td>Bahia</td>
-        <td>33</td>
-        <td>22</td>
-        <td>8</td>
-        <td>9</td>
-        <td>5</td>
-        <td>29</td>
-        <td>25</td>
-        <td>4</td>
-    </tr>
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required><br><br>
 
-     <tr>
-      <td><ol start="7"><li></li></ol></td>
-        <td><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/b/b4/Corinthians_simbolo.png/250px-Corinthians_simbolo.png?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Bandeira do Corinthians" width="20"></td>
-        <td>Corinthians</td>
-        <td>32</td>
-        <td>22</td>
-        <td>8</td>
-        <td>8</td>
-        <td>6</td>
-        <td>24</td>
-        <td>20</td>
-        <td>4</td>
-    </tr>
+        <label for="genero">Gênero:</label>
+        <select name="genero" id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+            <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+        </select>
+    </fieldset>
 
-     <tr>
-        <td><ol start="8"><li></li></ol></td>
-        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwEIuNtraKWiHNRI8aW6_4xwmZl79IUsQOGvz_0l0Yzg&s=10" alt="Bandeira Bragantino" width="20"></td>
-        <td>Bragantino</td>
-        <td>31</td>
-        <td>21</td>
-        <td>9</td>
-        <td>4</td>
-        <td>8</td>
-        <td>26</td>
-        <td>22</td>
-        <td>4</td>
-    </tr>
+    <!-- Segundo Bloco -->
+    <fieldset>
+        <legend>Informações Profissionais
+        </legend>
 
-     <tr>
-       <td><ol start="9"><li></li></ol></td>
-        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Botafogo_de_Futebol_e_Regatas_logo.svg/1280px-Botafogo_de_Futebol_e_Regatas_logo.svg.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Bandeira do Botafogo" width="20"></td>
-        <td>Botafogo</td>
-        <td>30</td>
-        <td>21</td>
-        <td>8</td>
-        <td>6</td>
-        <td>7</td>
-        <td>35</td>
-        <td>33</td>
-        <td>2</td>
-    </tr>
+       <br>
+<label for="linguagem">Linguagem Favorita:</label>
+<select id="linguagem" name="linguagem">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="javascript">JavaScript</option>
+    <option value="python">Python</option>
+    <option value="java">Java</option>
+</select><br><br>
 
-     <tr>
-       <td><ol start="10"><li></li></ol></td>
-        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFsEs-0b1VfKMmD-lC6_VwAKBci6kOhJmYUkRKxtJRA&s=10" alt="Bandeira de Coritiba" width="20"></td>
-        <td>Coritiba</td>
-        <td>30</td>
-        <td>22</td>
-        <td>8</td>
-        <td>6</td>
-        <td>8</td>
-        <td>27</td>
-        <td>29</td>
-        <td>-2</td>
-    </tr>
+    <label for="nivel_de_conhecimento">Nível de Conhecimento:</label>
+    <select id="nivel_de_conhecimento" name="nivel_de_conhecimento">
+        <option value="iniciante">Iniciante</option>
+        <option value="intermediario">Intermediário</option>
+        <option value="avancado">Avançado</option>
+    </select><br><br>
 
-     <tr>
-        <td><ol start="11"><li></li></ol></td>
-        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Logo_of_Clube_Atl%C3%A9tico_Mineiro.svg/250px-Logo_of_Clube_Atl%C3%A9tico_Mineiro.svg.png?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Bandeira do Atlético-MG" width="20"></td>
-        <td>Atlético-MG</td>
-        <td>29</td>
-        <td>21</td>
-        <td>8</td>
-        <td>5</td>
-        <td>8</td>
-        <td>27</td>
-        <td>27</td>
-        <td>0</td>
-    </tr>
 
-     <tr>
-       <td><ol start="12"><li></li></ol></td>
-        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-tvSZt2kQl_zUYqQ9Ld0mjsv2Xd5Ahm0YVIWyr5tLzA&s" alt="Bandeira do São Paulo" width="20"></td>
-        <td>São Paulo</td>
-        <td>26</td>
-        <td>21</td>
-        <td>7</td>
-        <td>5</td>
-        <td>9</td>
-        <td>26</td>
-        <td>25</td>
-        <td>1</td>
-    </tr>
+        <label for="bio">Fale sobre sua esperiência:</label><br>
+        <textarea id="bio" name="bio" rows="3" placeholder="Conte um pouco sobre a sua experiência com tecnologia..."></textarea>
+    </fieldset>
 
-     <tr>
-       <td><ol start="13"><li></li></ol></td>
-        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREzNfvv_zZTlX8aJ1yRAB_hwTQp0PgzrhxCLzbLO9BqQ&s" alt="Bandeira do EC Vitória" width="20"></td>
-        <td>EC Vitória</td>
-        <td>26</td>
-        <td>22</td>
-        <td>7</td>
-        <td>5</td>
-        <td>10</td>
-        <td>22</td>
-        <td>33</td>
-        <td>-11</td>
-    </tr>
 
-     <tr>
-      <td><ol start="14"><li></li></ol></td>
-        <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Gremio_logo.svg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Bandeira do Grêmio" width="20"></td>
-        <td>Grêmio</td>
-        <td>25</td>
-        <td>21</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>24</td>
-        <td>27</td>
-        <td>-3</td>
-    </tr>
 
-     <tr>
-      <td><ol start="15"><li></li></ol></td>
-        <td><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Mirassol_Futebol_Clube_logo_%283_stars%29.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Bandeira do Mirassol" width="20"></td>
-        <td>Mirassol</td>
-        <td>23</td>
-        <td>21</td>
-        <td>6</td>
-        <td>5</td>
-        <td>10</td>
-        <td>24</td>
-        <td>30</td>
-        <td>-6</td>
-    </tr>
+        <fieldset>
+        <legend>Preferências de Contato</legend>
 
-     <tr>
-       <td><ol start="16"><li></li></ol></td>
-        <td><img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Escudo_do_Sport_Club_Internacional.svg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Bandeira do Internacional" width="20"></td>
-        <td>Internacional</td>
-        <td>23</td>
-        <td>22</td>
-        <td>5</td>
-        <td>8</td>
-        <td>9</td>
-        <td>23</td>
-        <td>27</td>
-        <td>-4</td>
-    </tr>
+        <label for="hora-cadastro">Melhor horário para contato:</label>
+        <input type="time" id="hora-cadastro" name="hora-cadastro"><br><br>
 
-     <tr>
-        <td><ol start="17"><li></li></ol></td>
-        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Santos_Futebol_Clube_logo_%28with_stars_and_crown%29.png/250px-Santos_Futebol_Clube_logo_%28with_stars_and_crown%29.png?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Bandeira do Santos" width="20"></td>
-        <td>Santos</td>
-        <td>22</td>
-        <td>21</td>
-        <td>5</td>
-        <td>7</td>
-        <td>9</td>
-        <td>29</td>
-        <td>35</td>
-        <td>-6</td>
-    </tr>
+         <label for="data">Data disponível para iniciar um projeto:</label>
+        <input type="date" id="nascimento" name="nascimento" required><br><br>
+         </fieldset>
 
-     <tr>
-       <td><ol start="18"><li></li></ol></td>
-        <td><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/8/8b/EscudoDoVascoDaGama.svg/250px-EscudoDoVascoDaGama.svg.png?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Bandeira do Vasco da Gama" width="20"></td>
-        <td>Vasco da Gama</td>
-        <td>22</td>
-        <td>21</td>
-        <td>5</td>
-        <td>7</td>
-        <td>9</td>
-        <td>23</td>
-        <td>31</td>
-        <td>-8</td>
-    </tr>
 
-     <tr>
-     <td><ol start="19"><li></li></ol></td>
-        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEwyfEowAVbIeQ0Y2yFrg0Fevya7rZrN2abgTjYPZ_Ng&s" alt="Bandeira do Remo" width="20"></td>
-        <td>Remo</td>
-        <td>22</td>
-        <td>22</td>
-        <td>5</td>
-        <td>7</td>
-        <td>10</td>
-        <td>26</td>
-        <td>36</td>
-        <td>-10</td>
-    </tr>
 
-     <tr>
-        <td><ol start="20"><li></li></ol></td>
-        <td><img src="https://chapecoense.com/wp-content/uploads/2022/06/escudo.png" alt="Bandeira do Chapecoense" width="20"></td>
-        <td>Chapecoense</td>
-        <td>10</td>
-        <td>21</td>
-        <td>1</td>
-        <td>7</td>
-        <td>13</td>
-        <td>20</td>
-        <td>43</td>
-        <td>-23</td>
-    </tr>
-    </tbody>
-    </table>   
-    </ol>
+
+             <fieldset>
+        <legend>Informações Adicionais</legend>
+
+        <details>
+            <summary>O que é a DevConnect?</summary>
+            <p>A DevConnect é uma plataforma feita para conectar desenvolvedores a projetos e oportunidades incríveis no mercado de tecnologia.</p>
+        </details>
+
+        <br>
+        <mark>Atenção: confira seus dados antes de realizar o cadastro.</mark>
+
+        <p>Para dúvidas, entre em contato:</p>
+        <address>
+            <em>DevConnect</em><br>
+            E-mail: <a href="mailto:contato@devconnect.com.br">contato@devconnect.com.br</a><br>
+            Telefone: (11) 99999-9999
+        </address>
+
+        <p>Data de abertura dos cadastros: 14 de agosto de 2026</p>
+
+        <br>
+        <input type="submit" value="Cadastrar Desenvolvedor">
+    </fieldset>
+</form>
+
 </body>
 </html>
-
-
-
-
-
-
